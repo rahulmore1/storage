@@ -6,6 +6,7 @@ services:
           dockerfile: dockerfile
         ports:  
           - "1433:1433"
+        restart: always
         env_file:
           - sqlserver.env
           - sapassword.env
